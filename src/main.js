@@ -1,5 +1,5 @@
 /**
- * @description se crean los atributos de la calse que permite crear el board
+ * @description se crean los atributos de la clase que permite crear el board
  */
 (function(){
     
@@ -139,7 +139,7 @@
         this.canvas.width = board.width;
         this.canvas.height = board.height;
         this.board = board;
-        this.ctx = canvas.getContext("2d");
+        this.contexto = canvas.getContext("2d");
     }
     self.BoardView.prototype={
 
@@ -147,12 +147,12 @@
          * @ metodo que permite limpiar el rastro de la barra
          */
         clean: function() {
-            this.ctx.clearRect(0,  0, this.board.width, this.board.height);
+            this.contexto.clearRect(0,  0, this.board.width, this.board.height);
         },
         draw: function(){
             for(let i = this.board.elements.length - 1; i >= 0 ; i--){
                 let el = this.board.elements[i];
-                draw(this.ctx,el);
+                draw(this.contexto,el);
             }
         },
         
@@ -213,20 +213,20 @@
     }
     /**
      * @description funcion que permite dibujar las figuras del rectangle y el circle
-     * @param {*} ctx 
+     * @param {*} contexto 
      * @param {*} element 
      */
-    function draw(ctx,element){
+    function draw(contexto,element){
        
             switch(element.kind){
                 case "rectangle":
-                    ctx.fillRect(element.x,element.y,element.width,element.height);
+                    contexto.fillRect(element.x,element.y,element.width,element.height);
                 break;
                 case "circle":
-                    ctx.beginPath();
-                    ctx.arc(element.x,element.y,element.radius,0,7);
-                    ctx.fill();
-                    ctx.closePath();
+                    contexto.beginPath();
+                    contexto.arc(element.x,element.y,element.radius,0,7);
+                    contexto.fill();
+                    contexto.closePath();
                 break;    
             }
 
@@ -245,7 +245,6 @@ let ball = new Ball(350,100,10, board);
  * @description funcion que espera el evento de cuando se presiona una tecla sobre la pagina
  */
 document.addEventListener("keydown", function(ev){
-    console.log(ev.keyCode);
     if(ev.keyCode == 38){
         ev.preventDefault();
 
