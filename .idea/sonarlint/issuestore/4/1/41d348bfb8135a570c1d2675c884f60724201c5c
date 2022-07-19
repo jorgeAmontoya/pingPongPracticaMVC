@@ -1,0 +1,13 @@
+
+{javascript:S1488"`Immediately return this expression instead of assigning it to the temporary variable "elements".(Ò”Ùy
+:javascript:S125"Remove this commented out code.(Šè½Õ
+Kjavascript:S1117"/'board' is already declared in the upper scope.(ÃŒ“·
+Ljavascript:S11174"0'canvas' is already declared in the upper scope.(’”«
+Kjavascript:S11174"/'board' is already declared in the upper scope.(’”«
+xjavascript:S2703?"WAdd the "let", "const" or "var" keyword to this declaration of "x" to make it explicit.(­ğÒøÿÿÿÿ
+Tjavascript:S1121?"3Extract the assignment of "x" from this expression.(­ğÒøÿÿÿÿ
+xjavascript:S2703?"WAdd the "let", "const" or "var" keyword to this declaration of "y" to make it explicit.(­ğÒøÿÿÿÿ
+Tjavascript:S1121?"3Extract the assignment of "y" from this expression.(­ğÒøÿÿÿÿ
+7javascript:S1116D"Unnecessary semicolon.(ôŸìúÿÿÿÿ
+Ujavascript:S1301I"9"switch" statements should have at least 3 "case" clauses(æÔæÅ
+?javascript:S125i"Remove this commented out code.(±‹Ûèùÿÿÿÿ
